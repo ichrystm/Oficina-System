@@ -10,3 +10,7 @@ document.querySelector("#new-car").addEventListener('click', function() {
 document.getElementById("n-findclient").addEventListener('click', function() {
     document.querySelector(".bg-findclient").style.display = 'flex'
 })
+
+document.getElementById("n-findcar").addEventListener('click', function() {
+    document.querySelector(".bg-findcar").style.display = 'flex'
+})

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="views/styles/newclient.css">
     <link rel="stylesheet" href="views/styles/newcar.css">
     <link rel="stylesheet" href="views/styles/findclient.css">
+    <link rel="stylesheet" href="views/styles/findcar.css">
 </head>
 <body>
     <div class="main">
@@ -75,7 +76,7 @@
                             <p>Cliente</p>
                         </div>
                     </div>
-                    <div class="menu-item">
+                    <div id="n-findcar"class="menu-item">
                         <div class="icons">
                             <i class="material-icons">find_in_page</i>
                         </div>
@@ -101,7 +102,7 @@
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">assignment_ind</i>
-                                <input id="client_cpf" type="text" class="validate" placeholder="CPF">
+                                <input id="client_cpf" type="text" class="validate" placeholder="CPF" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">phone</i>
@@ -174,7 +175,7 @@
             <div class="findclient-box">
                 <div id="header-findclient">
                     <i id ="icon-findclient" class="small material-icons">directions_car</i>
-                    <h3 id="title-newcar">Localizar cliente</h3>
+                    <h3 id="title-findclient">Localizar cliente</h3>
                 </div>
                     <div class="info-box-findclient">
                         <div id="info-findclient-1">
@@ -199,10 +200,36 @@
                     </div>
             </div>
         </div>
+        <div class="bg-findcar">
+            <div class="findcar-box">
+                <div id="header-findcar">
+                    <i id ="icon-findcar" class="small material-icons">directions_car</i>
+                    <h3 id="title-findcar">Localizar veículo</h3>
+                </div>
+                    <div class="info-box-findcar">
+                        <div id="info-findcar-1">
+                            <div id="info-findcar-line">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">flag</i>
+                                    <input id="findcar_board" type="text" class="validate" placeholder="Placa">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-new">
+                            <a href="#" id="btn" class="btn blue darken-1">Localizar</a>
+                            <a href="#" id="btn-cancel-findcar" class="btn orange darken-4">Cancelar</a>
+                        </div>
+                    </div>
+                    <div id="result-findcar">
+
+                    </div>
+            </div>
+        </div>
     </div>
     <script src="scripts/index.js"></script>
     <script src="scripts/newclient.js"></script>
     <script src="scripts/newcar.js"></script>
     <script src="scripts/findclient.js"></script>
+    <script src="scripts/findcar.js"></script>
 </body>
 </html>
