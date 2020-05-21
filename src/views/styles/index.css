@@ -1,0 +1,99 @@
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --bgp-color: #dae294;
+    --primary-color: #647aff;
+    --second-color: #b9c3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+html, body, .main {
+    height: 100%;
+}
+
+.main {
+    background-image: linear-gradient(#f8f8e7, #d8e280);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#app {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 10px 7px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+#new-itens, #consult-itens {
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    display: flex;
+}
+
+#new-itens {
+    margin-top: 10px;
+}
+
+.menu-item {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    background-color: var(--second-color);
+    margin: 15px;
+    border-radius: 10px;
+    display: grid;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #8596fc;
+}
+
+.icons {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.titles {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}

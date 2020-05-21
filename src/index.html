@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrysler-Car</title>
+    <link rel="stylesheet" href="views/styles/index.css">
+    <link rel="stylesheet" href="views/styles/newclient.css">
+    <link rel="stylesheet" href="views/styles/newcar.css">
+    <link rel="stylesheet" href="views/styles/findclient.css">
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <img src="views/imgs/Logo2.png">
+        </div>
+        <div id="app">
+            <div id="content">
+                <div id="new-itens">
+                    <div id="n-assignment" class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">assignment</i>
+                        </div>
+                        <div class="titles">
+                            <p>Orçamento</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">build</i>
+                        </div>
+                        <div class="titles">
+                            <p>Serviço</p>
+                        </div>
+                    </div>
+                    <div id="n-client" class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">contacts</i>
+                        </div>
+                        <div class="titles">
+                            <p>Cliente</p>
+                        </div>
+                    </div>
+                    <div id="new-car" class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">directions_car</i>
+                        </div>
+                        <div class="titles">
+                            <p>Veículo</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="consult-itens">
+                    <div class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">find_in_page</i>
+                        </div>
+                        <div class="titles">
+                            <p>Orçamento</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">find_in_page</i>
+                        </div>
+                        <div class="titles">
+                            <p>Serviço</p>
+                        </div>
+                    </div>
+                    <div id="n-findclient" class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">find_in_page</i>
+                        </div>
+                        <div class="titles">
+                            <p>Cliente</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="icons">
+                            <i class="material-icons">find_in_page</i>
+                        </div>
+                        <div class="titles">
+                            <p>Veículo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-client">
+            <div id="client-box">
+                <div id="header-newclient">
+                    <i id ="icon-client" class="small material-icons">contacts</i>
+                    <h3 id="title-newclient">Novo cliente</h3>
+                </div>
+                <div class="info-box">
+                    <div id="info-1">
+                        <div class="info-line">
+                            <div class="input-field col s6">
+                              <i class="material-icons prefix">account_circle</i>
+                              <input id="client_name" type="text" class="validate" placeholder="Nome completo*">
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">assignment_ind</i>
+                                <input id="client_cpf" type="text" class="validate" placeholder="CPF">
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="client_tel" type="text" class="validate" placeholder="Telefone*">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="info-2">
+                        <div class="info-line">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">gps_fixed</i>
+                                <input id="client_cep" type="text" class="validate" placeholder="CEP*">
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">home</i>
+                                <input id="client_street" type="text" class="validate" placeholder="Rua*">
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">home</i>
+                                <input id="client_neighbourhood" type="text" class="validate" placeholder="Bairro">
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">home</i>
+                                <input id="client_number" type="text" class="validate" placeholder="Número/complemento">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="buttons-new">
+                <a href="#" id="btn" class="btn blue darken-1">Cadastrar</a>
+                <a href="#" id="btn-cancel" class="btn orange darken-4">Cancelar</a>
+            </div>
+            </div>
+        </div>
+        <div class="bg-car">
+            <div class="car-box">
+                <div id="header-newcar">
+                    <i id ="icon-car" class="small material-icons">directions_car</i>
+                    <h3 id="title-newcar">Novo veículo</h3>
+                </div>
+                    <div class="info-box-car">
+                        <div id="info-car-1">
+                            <div id="info-car-line">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">flag</i>
+                                    <input id="client_number" type="text" class="validate" placeholder="Fabricante*">
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">directions_car</i>
+                                    <input id="client_number" type="text" class="validate" placeholder="Modelo*">
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">assignment</i>
+                                    <input id="client_number" type="text" class="validate" placeholder="Placa*">
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">date_range</i>
+                                    <input id="client_number" type="text" class="validate" placeholder="Ano">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-new">
+                            <a href="#" id="btn" class="btn blue darken-1">Cadastrar</a>
+                            <a href="#" id="btn-cancel-car" class="btn orange darken-4">Cancelar</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="bg-findclient">
+            <div class="findclient-box">
+                <div id="header-findclient">
+                    <i id ="icon-findclient" class="small material-icons">directions_car</i>
+                    <h3 id="title-newcar">Localizar cliente</h3>
+                </div>
+                    <div class="info-box-findclient">
+                        <div id="info-findclient-1">
+                            <div id="info-findclient-line">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">flag</i>
+                                    <input id="findclient_name" type="text" class="validate" placeholder="Nome">
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">directions_car</i>
+                                    <input id="findclient_cpf" type="text" class="validate" placeholder="CPF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-new">
+                            <a href="#" id="btn" class="btn blue darken-1">Localizar</a>
+                            <a href="#" id="btn-cancel-findclient" class="btn orange darken-4">Cancelar</a>
+                        </div>
+                    </div>
+                    <div id="result-findclient">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/newclient.js"></script>
+    <script src="scripts/newcar.js"></script>
+    <script src="scripts/findclient.js"></script>
+</body>
+</html>
